@@ -9,7 +9,7 @@
   img
     max-width: 500px
     width: 100%
-    
+
   article
     width: 80%
     margin: 0 auto
@@ -26,8 +26,10 @@
 
   li
     list-style: none
+
   li:first-child
     margin-right: auto
+
   a
     color: white
     display: block
@@ -36,11 +38,37 @@
     text-decoration: none
     font-weight: 900
     text-transform: uppercase
+
   img
     height: 40px
+
 
 a.download
     background: white
     color: $ocean
     box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5)
     margin-left: 25px
+
+#brands
+
+  img
+    width: 85px
+
+  ul
+    margin: 0
+    padding: 20px 0
+    background: white
+    text-align: center
+    grid-row: auto
+    grid-column: auto
+    display: grid
+    grid-template-columns: repeat(6, auto)
+    @media only screen and (max-width: 550px)
+      grid-template-columns: repeat(3, auto)
+      li img
+        width: 50%
+  li
+    list-style: none
+
+  li img
+    width: 80%
